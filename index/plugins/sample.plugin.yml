@@ -1,6 +1,6 @@
 id: sample.plugin
 name: 示例插件
-version: 1.0.0
+version: 1.0.1
 description: 示例插件，演示工具栏组件动态注册
 author: 示例作者
 entranceAssembly: SamplePlugin.dll
