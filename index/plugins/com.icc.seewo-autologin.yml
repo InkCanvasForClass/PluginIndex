@@ -1,0 +1,13 @@
+id: com.icc.seewo-autologin
+name: 希沃自动登录
+version: 1.0.0
+description: 自动登录希沃教育平台 (edu.seewo.com)，支持多账号管理和 SSO 快捷登录
+author: CJKmkp
+entranceAssembly: SeewoAutoLogin.dll
+url: https://github.com/CJKmkp/SeewoAutoLogin
+repoOwner: CJKmkp
+repoName: SeewoAutoLogin
+downloadPath: releases/download/v{version}/com.icc.seewo-autologin.icpx
+iconPath: ""
+readmePath: README.md
+dependencies: []
