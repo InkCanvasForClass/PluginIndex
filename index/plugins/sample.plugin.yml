@@ -1,0 +1,13 @@
+id: sample.plugin
+name: 示例插件
+version: 1.0.0
+description: 示例插件，演示工具栏组件动态注册
+author: 示例作者
+entranceAssembly: SamplePlugin.dll
+url: https://github.com/InkCanvasForClass/SamplePlugin
+repoOwner: InkCanvasForClass
+repoName: SamplePlugin
+downloadPath: releases/download/v{version}/sample.plugin.icpx
+iconPath: ""
+readmePath: README.md
+dependencies: []

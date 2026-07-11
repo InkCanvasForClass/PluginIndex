@@ -1,0 +1,104 @@
+name: Generate Plugin Index
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Generate index.json
+      shell: pwsh
+      run: |
+        # 读取镜像配置
+        $base = Get-Content "base.json" | ConvertFrom-Json
+
+        # 收集所有插件 YAML
+        $plugins = @()
+        Get-ChildItem "index/plugins/*.yml" | ForEach-Object {
+          $lines = Get-Content $_.FullName
+          $obj = @{}
+          foreach ($line in $lines) {
+            if ($line -match '^(\w+):\s*(.*)$') {
+              $key = $matches[1]
+              $val = $matches[2].Trim()
+              # 处理数组值
+              if ($val -match '^\[.*\]$') {
+                $obj[$key] = ($val -replace '^\[|\]$','') -split ',\s*' | Where-Object { $_ }
+              } else {
+                $obj[$key] = $val
+              }
+            }
+          }
+          $plugins += $obj
+        }
+
+        # 构建 index.json
+        $index = @{
+          Plugins = @()
+          DownloadMirrors = $base.DownloadMirrors
+        }
+
+        foreach ($p in $plugins) {
+          $version = if ($p.version) { $p.version } else { "0.0.0" }
+          $downloadUrl = ""
+          if ($p.downloadPath) {
+            $downloadUrl = "{root}/$($p.repoOwner)/$($p.repoName)/$($p.downloadPath -replace '\{version\}', $version)"
+          }
+          $iconUrl = ""
+          if ($p.iconPath) {
+            $iconUrl = "https://raw.githubusercontent.com/$($p.repoOwner)/$($p.repoName)/main/$($p.iconPath)"
+          }
+          $readmeUrl = ""
+          if ($p.readmePath) {
+            $readmeUrl = "https://raw.githubusercontent.com/$($p.repoOwner)/$($p.repoName)/main/$($p.readmePath)"
+          }
+
+          $manifest = @{
+            Id = $p.id
+            Name = $p.name
+            Version = $version
+            Description = if ($p.description) { $p.description } else { "" }
+            Author = if ($p.author) { $p.author } else { "" }
+            EntranceAssembly = if ($p.entranceAssembly) { $p.entranceAssembly } else { "" }
+            ApiVersion = if ($p.apiVersion) { $p.apiVersion } else { "1.0.0" }
+            Url = if ($p.url) { $p.url } else { "" }
+            Dependencies = @()
+          }
+
+          $entry = @{
+            Manifest = $manifest
+            IconUrl = $iconUrl
+            DownloadUrl = $downloadUrl
+            DownloadSha256 = ""
+            ReadmeUrl = $readmeUrl
+            DownloadCount = 0
+            StarsCount = 0
+          }
+
+          $index.Plugins += $entry
+        }
+
+        # 写入 index.json
+        $json = $index | ConvertTo-Json -Depth 10
+        $json | Out-File "index.json" -Encoding utf8
+        Write-Host "Generated index.json with $($plugins.Count) plugins"
+        Get-Content "index.json"
+
+    - name: Upload to release
+      uses: ncipollo/release-action@v1
+      with:
+        tag: latest
+        allowUpdates: true
+        artifacts: "index.json"
+        body: "Auto-generated plugin index"
+        token: ${{ secrets.GITHUB_TOKEN }}

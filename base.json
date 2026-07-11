@@ -1,0 +1,6 @@
+{
+  "DownloadMirrors": {
+    "github": "https://github.com",
+    "ghproxy": "https://mirror.ghproxy.com/https://github.com"
+  }
+}
