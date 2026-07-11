@@ -14,7 +14,7 @@
       },
       "IconUrl": "https://raw.githubusercontent.com/InkCanvasForClass/SamplePlugin/main/icon.png",
       "DownloadUrl": "{root}/InkCanvasForClass/SamplePlugin/releases/download/v1.0.0/sample.plugin.icpx",
-      "DownloadSha256": "1177743d38e36f213c7d6a06aab00805885807c43a0236531755c71b3958e927",
+      "DownloadSha256": "",
       "ReadmeUrl": "https://raw.githubusercontent.com/InkCanvasForClass/SamplePlugin/main/README.md",
       "DownloadCount": 0,
       "StarsCount": 0
