@@ -1,6 +1,6 @@
 id: com.icc.seewo-autologin
 name: 希沃自动登录
-version: 1.0.7
+version: 1.1.0
 description: 支持希沃官方二维码登录、多账号管理和 SSO 快捷登录
 author: CJKmkp
 entranceAssembly: SeewoAutoLogin.dll
