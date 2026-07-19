@@ -8,6 +8,7 @@ url: https://github.com/CJKmkp/CountdownDays
 repoOwner: CJKmkp
 repoName: CountdownDays
 downloadPath: releases/download/v1.0.0/com.icc.countdown-days-1.0.0.icpx
+readmePath: README.md
 iconPath: ""
 permissions:
   - Notifications
