@@ -1,0 +1,14 @@
+id: com.icc.easiconnect
+name: 易联
+version: 1.0.1.0
+description: 【特别牛逼】可以在视频展台中与sw手机客户端互联以传输照片
+author: 刘同学
+entranceAssembly: easiconnect.dll
+url: https://github.com/wwcrdrvf6u/CEP_easiconnect
+repoOwner: 刘同学
+repoName: CEP_easiconnect
+downloadPath: releases/download/v{version}/easiconnect.{version}.icpx
+readmePath: README.md
+iconPath: ""
+permissions:
+  - Network
