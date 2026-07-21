@@ -2,7 +2,7 @@ id: com.icc.function-insert
 name: 函数
 version: 1.0.0
 description: 在白板/画布上插入数学函数图像，支持函数表达式、范围、采样点数、缩放、颜色和线宽设置
-author: ICC-CE
+author: CJKmkp
 entranceAssembly: FunctionInsert.dll
 url: https://github.com/CJKmkp/FunctionInsert
 repoOwner: CJKmkp
