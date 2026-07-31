@@ -1,0 +1,16 @@
+id: com.icc.pdf-reader
+name: PDF 阅读器
+version: 1.0.0
+description: 把 PDF 加载为画布背景，直接用宿主墨迹工具批注：滚轮翻页、每页墨迹独立保存，可导出「页面 + 墨迹」为新的 PDF
+author: CJKmkp
+entranceAssembly: PdfReader.dll
+apiVersion: 1.0.0
+url: https://github.com/CJKmkp/PdfReader
+repoOwner: CJKmkp
+repoName: PdfReader
+downloadPath: releases/download/v{version}/com.icc.pdf-reader.icpx
+readmePath: README.md
+iconPath: ""
+permissions:
+  - FileSystem
+dependencies: []
