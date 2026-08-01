@@ -1,6 +1,6 @@
 id: com.icc.countdown-days
 name: 桌面倒计日
-version: 1.0.0
+version: 1.1.0
 description: 桌面倒计时与纪念日小工具，支持多个目标、临近提醒
 author: CJKmkp
 entranceAssembly: CountdownDays.dll

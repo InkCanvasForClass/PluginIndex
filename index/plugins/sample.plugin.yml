@@ -1,6 +1,6 @@
 id: sample.plugin
 name: 示例插件
-version: 1.0.2
+version: 1.1.0
 description: 示例插件，演示工具栏组件动态注册
 author: ICC-CE
 entranceAssembly: SamplePlugin.dll
