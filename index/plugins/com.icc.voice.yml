@@ -1,0 +1,14 @@
+id: com.icc.voice
+name: 语音播报
+version: 1.0.0
+description: 随机抽选结果自动语音播报，支持多TTS引擎、提示音等功能
+author: HHH2309
+entranceAssembly: VoicePlugin.dll
+url: https://github.com/HHH2309/VoicePlugin
+repoOwner: HHH2309
+repoName: VoicePlugin
+downloadPath: releases/download/v{version}/com.icc.voice.icpx
+iconPath: ""
+readmePath: README.md
+permissions: []
+dependencies: []
