@@ -1,6 +1,6 @@
 id: quickdict.plugin
 name: QuickDict 查词
-version: 0.9.0
+version: 0.9.1
 description: 英语单词查询插件，支持 ECDICT 与用户导入的 MDict 词典，集成 Edge TTS 与 Piper TTS
 author: 2,2,3-三甲基戊烷
 entranceAssembly: QuickDictForICC.dll
