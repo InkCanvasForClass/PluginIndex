@@ -7,7 +7,7 @@ entranceAssembly: QuickDictForICC.dll
 url: https://github.com/2-2-3-trimethylpentane/QuickDictForICC
 repoOwner: 2-2-3-trimethylpentane
 repoName: QuickDictForICC
-downloadPath: releases/download/v{version}/quickdict.plugin.icpx
+downloadPath: releases/download/{version}/quickdict.plugin.icpx
 iconPath: ""
 readmePath: README.md
 dependencies: []
