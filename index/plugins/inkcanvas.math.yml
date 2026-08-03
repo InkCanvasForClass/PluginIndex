@@ -1,0 +1,13 @@
+id: inkcanvas.math
+name: 结构化数学白板
+version: 1.0.0
+description: InkCanvasForClass 的离线结构化几何、函数图像与 2.5D 立体插件。
+author: InkCanvas Math contributors
+entranceAssembly: InkCanvas.Math.Plugin.dll
+apiVersion: 1.3.0
+url: https://github.com/MEMZ-JZY/InkCanvas-Math-Canvas-Plus
+repoOwner: MEMZ-JZY
+repoName: InkCanvas-Math-Canvas-Plus
+downloadPath: releases/download/v{version}/inkcanvas.math.icpx
+readmePath: README.md
+dependencies: []
