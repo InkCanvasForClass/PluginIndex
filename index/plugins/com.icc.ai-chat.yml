@@ -1,0 +1,18 @@
+id: com.icc.ai-chat
+name: AI 助手
+version: 1.0.0
+description: 独立悬浮 AI 聊天助手，支持 OpenAI 兼容与 Claude 原生协议，回答可一键插入画布。
+author: CJKmkp
+entranceAssembly: AIChat.dll
+apiVersion: 1.0.0
+url: https://github.com/CJKmkp/AIChat
+repoOwner: CJKmkp
+repoName: AIChat
+downloadPath: releases/download/v{version}/com.icc.ai-chat.icpx
+readmePath: README.md
+iconPath: ""
+permissions:
+  - Network
+  - Canvas
+  - Settings
+dependencies: []
