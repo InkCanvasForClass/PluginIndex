@@ -1,0 +1,22 @@
+id: com.icc.class-agent
+name: ClassAgent
+version: 0.1.0
+description: '课堂 AI 助手：读取屏幕、自动讲题、结构化批注、辅助板书和智慧白板。'
+author: ICC-CE
+entranceAssembly: ClassAgent.dll
+apiVersion: 1.13.0
+url: https://github.com/CJKmkp/ClassAgent
+repoOwner: CJKmkp
+repoName: ClassAgent
+downloadPath: releases/download/v{version}/com.icc.class-agent.icpx
+readmePath: README.md
+iconPath: icon.png
+permissions:
+  - Network
+  - Canvas
+  - ScreenCapture
+  - UIAutomation
+  - Microphone
+  - Hotkeys
+  - Settings
+dependencies: []
