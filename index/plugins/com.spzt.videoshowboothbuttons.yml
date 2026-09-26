@@ -1,0 +1,15 @@
+id: com.spzt.videoshowboothbuttons
+name: 视频展台硬件按钮
+version: 1.1.0
+description: 适配视频展台硬件的 5 个物理按键（拍照/放大/缩小/旋转/开关）。硬件把按键模拟为 Ctrl+Alt+Shift+M/O/I/U/P 全局热键，插件接收后转发到 ICC 内置视频展台，替代厂商 VideoShow/HotKeyApp 软件，并提供自定义热键设置页。
+author: PrefacedCorg
+entranceAssembly: VideoShowBoothButtons.dll
+apiVersion: 1.12.0
+url: https://github.com/PrefacedCorg/VideoShowBoothButtons
+repoOwner: PrefacedCorg
+repoName: VideoShowBoothButtons
+downloadPath: releases/download/v{version}/com.spzt.videoshowboothbuttons.icpx
+readmePath: ""
+iconPath: ""
+permissions:
+  - Hotkeys
