@@ -1,6 +1,6 @@
 id: com.icc.class-agent
 name: ClassAgent
-version: 0.1.0
+version: 0.2.0
 description: '课堂 AI 助手：读取屏幕、自动讲题、结构化批注、辅助板书和智慧白板。'
 author: ICC-CE
 entranceAssembly: ClassAgent.dll
