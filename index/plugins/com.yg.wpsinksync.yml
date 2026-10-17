@@ -1,0 +1,17 @@
+id: com.yg.wpsinksync
+name: WPS 墨迹同步
+version: 0.1.0
+description: 在 ICC CE 浮动工具栏加一排翻页按钮，按一下让 WPS 里的 doc 或 pdf 滚动 N 格，同时把白板上的批注笔迹按同样的像素平移
+author: chuyue136
+entranceAssembly: WpsInkSync.dll
+apiVersion: 1.0.0
+url: https://github.com/chuyue136/WPSfollow
+repoOwner: chuyue136
+repoName: WPSfollow
+downloadPath: releases/download/v{version}/WpsInkSync.icpx
+readmePath: README.md
+iconPath: ""
+permissions:
+  - Hotkeys
+  - FileSystem
+dependencies: []
