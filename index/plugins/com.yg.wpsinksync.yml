@@ -1,0 +1,17 @@
+﻿id: com.yg.wpsinksync
+name: WPS 澧ㄨ抗鍚屾
+version: 0.1.1
+description: 鍦?ICC CE 娴姩宸ュ叿鏍忓姞涓€鎺掔炕椤垫寜閽紝鎸変竴涓嬭 WPS 閲岀殑 doc 鎴?pdf 婊氬姩 N 鏍硷紝鍚屾椂鎶婄櫧鏉夸笂鐨勬壒娉ㄧ瑪杩规寜鍚屾牱鐨勫儚绱犲钩绉?
+author: chuyue136
+entranceAssembly: WpsInkSync.dll
+apiVersion: 1.0.0
+url: https://github.com/chuyue136/WPSfollow
+repoOwner: chuyue136
+repoName: WPSfollow
+downloadPath: releases/download/v{version}/WpsInkSync.icpx
+readmePath: README.md
+iconPath: ""
+permissions:
+  - Hotkeys
+  - FileSystem
+dependencies: []
