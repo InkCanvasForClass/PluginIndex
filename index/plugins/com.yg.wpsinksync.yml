@@ -1,7 +1,7 @@
-id: com.yg.wpsinksync
-name: WPS 墨迹同步
-version: 0.1.0
-description: 在 ICC CE 浮动工具栏加一排翻页按钮，按一下让 WPS 里的 doc 或 pdf 滚动 N 格，同时把白板上的批注笔迹按同样的像素平移
+﻿id: com.yg.wpsinksync
+name: WPS 澧ㄨ抗鍚屾
+version: 0.1.1
+description: 鍦?ICC CE 娴姩宸ュ叿鏍忓姞涓€鎺掔炕椤垫寜閽紝鎸変竴涓嬭 WPS 閲岀殑 doc 鎴?pdf 婊氬姩 N 鏍硷紝鍚屾椂鎶婄櫧鏉夸笂鐨勬壒娉ㄧ瑪杩规寜鍚屾牱鐨勫儚绱犲钩绉?
 author: chuyue136
 entranceAssembly: WpsInkSync.dll
 apiVersion: 1.0.0
