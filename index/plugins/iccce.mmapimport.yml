@@ -1,14 +1,14 @@
 # 提交到 github.com/InkCanvasForClass/PluginIndex → index/plugins/top.brokoon.mmapimport.yml
-id: top.brokoon.mmapimport
+id: iccce.mmapimport
 name: 导图导入 (.mmap)
 version: 0.4.1
 description: 将 MindManager .mmap 思维导图导入 ICC-CE 白板：双模式（可交互元素 / 全展开背景纸），还原层级、配色与折叠态，支持点击展开分支、直接书写批注，并随画布漫游与双指手势同步。
 author: BrokoonNetwork
 entranceAssembly: InkCanvas.Plugin.MmapImport.dll
-url: https://github.com/BrokoonNetwork/MmapImport
+url: https://github.com/BrokoonGames/mmapImport
 repoOwner: BrokoonNetwork
 repoName: MmapImport
-downloadPath: releases/download/v{version}/top.brokoon.mmapimport.icpx
+downloadPath: https://github.com/BrokoonGames/mmapImport/releases/download/Release/top.brokoon.mmapimport.icpx
 readmePath: README.md
 iconPath: icon.png
 permissions:
