@@ -8,7 +8,7 @@ entranceAssembly: InkCanvas.Plugin.MmapImport.dll
 url: https://github.com/BrokoonGames/mmapImport
 repoOwner: BrokoonNetwork
 repoName: MmapImport
-downloadPath: https://github.com/BrokoonGames/mmapImport/releases/download/Release/top.brokoon.mmapimport.icpx
+downloadPath: https://github.com/BrokoonGames/mmapImport/releases/download/V0.5_Release/brokoon.mmapimport.icpx
 readmePath: README.md
 iconPath: icon.png
 permissions:
